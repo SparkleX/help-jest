@@ -1,16 +1,12 @@
 import { oClassB } from "../ClassB";
 import { ClassA } from "../ClassA";
 import { ClassC } from "../ClassC";
+import { mockHello } from "./Common";
 
 const mock = jest.fn();
 oClassB.toBeMocked = mock;
 
-const mockHello = jest.fn();
-const oClassC: ClassC = {
-	hello : mockHello
-};
 
-jest.spyOn(ClassC, 'Current', 'get').mockReturnValue(oClassC);
 
 test("calla",  () => {
     const a: ClassA = new ClassA();
