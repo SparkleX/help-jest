@@ -1,10 +1,14 @@
 import { oClassB } from "./ClassB";
+import { ClassC } from "./ClassC";
 
 export class ClassA {
-    public toBeTestA():number {
+	public testStaticInstance(): void {
+		ClassC.Current.hello();
+	}
+    public toBeTestA(): number {
         return 100;
     }
-    public toBeTestB():string {
+    public toBeTestB(): string {
         return oClassB.toBeMocked("123");
     }
 }

@@ -12,4 +12,7 @@ module.exports = {
       statements: 100,
     },
   },  
+  modulePathIgnorePatterns: [
+	"<rootDir>/node_modules/.*"
+  ]
 };

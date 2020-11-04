@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`mock 1`] = `
+exports[`mock: check mock calls 1`] = `
 Array [
   Array [
     "123",
